@@ -35,17 +35,69 @@
             <li class="correct">d) Autómatos finitos</li>
         </ul>
     </div>
-    <!-- Repeat similar blocks for each question -->
+    <div class="question">
+        <p><strong>2. Qual é a operação que mantém uma linguagem regular regular?</strong></p>
+        <ul>
+            <li>a) União com uma linguagem livre de contexto</li>
+            <li class="correct">b) Interseção com uma linguagem regular</li>
+            <li>c) Concatenar com uma linguagem não regular</li>
+            <li>d) Interseção com uma linguagem recursiva</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>3. Para provar que uma linguagem não é regular, utiliza-se frequentemente:</strong></p>
+        <ul>
+            <li class="correct">a) O lema do bombeamento</li>
+            <li>b) A equivalência entre autómatos finitos determinísticos e não determinísticos</li>
+            <li>c) A forma normal de Chomsky</li>
+            <li>d) O problema da parada</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>4. Se um autómato finito não determinístico (AFN) possui \(n\) estados, o autómato finito determinístico (AFD) equivalente pode ter até:</strong></p>
+        <ul>
+            <li>a) \(n+1\) estados</li>
+            <li class="correct">b) \(2^n\) estados</li>
+            <li>c) \(n^2\) estados</li>
+            <li>d) \(n!\) estados</li>
+        </ul>
+    </div>
 
     <h2>Parte 2: Linguagens Livres de Contexto</h2>
     <div class="question">
         <p><strong>5. Qual dos seguintes problemas é decidível para gramáticas livres de contexto?</strong></p>
         <ul>
-            <li>a) Determinar se uma linguagem é vazia</li>
+            <li class="correct">a) Determinar se uma linguagem é vazia</li>
             <li>b) Verificar se duas gramáticas geram a mesma linguagem</li>
             <li>c) Determinar se uma gramática gera uma linguagem regular</li>
             <li>d) Determinar se uma palavra faz parte de uma linguagem irrestrita</li>
-            <li class="correct">Resposta correta: a</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>6. Qual a característica que define um autómato a pilha em comparação aos autómatos finitos?</strong></p>
+        <ul>
+            <li>a) Utiliza duas fitas de memória</li>
+            <li>b) Reconhece linguagens recursivamente enumeráveis</li>
+            <li class="correct">c) Possui uma pilha para memória adicional</li>
+            <li>d) Funciona apenas de forma determinística</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>7. A forma normal de Chomsky para gramáticas livres de contexto exige que:</strong></p>
+        <ul>
+            <li>a) Todas as regras de produção contenham pelo menos dois terminais</li>
+            <li class="correct">b) Cada regra de produção seja na forma \( A \rightarrow BC \) ou \( A \rightarrow a \)</li>
+            <li>c) Todas as produções incluam símbolos não terminais</li>
+            <li>d) A gramática seja completamente não ambígua</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>8. O lema do bombeamento para linguagens livres de contexto indica que, para uma linguagem livre de contexto \(L\), qualquer palavra \(w \in L\) longa o suficiente pode ser dividida em:</strong></p>
+        <ul>
+            <li>a) \(w = uvx\), onde \(uv\) pode ser bombeado</li>
+            <li class="correct">b) \(w = uvxy\), onde \(v\) e \(y\) podem ser bombeados</li>
+            <li>c) \(w = uxyz\), onde \(u\) pode ser bombeado</li>
+            <li>d) \(w = vx\), onde \(v\) pode ser bombeado</li>
         </ul>
     </div>
 
@@ -59,7 +111,61 @@
             <li>d) Garantir que todas as linguagens regulares sejam reconhecíveis</li>
         </ul>
     </div>
+    <div class="question">
+        <p><strong>10. Qual das opções abaixo descreve uma característica de uma linguagem recursiva?</strong></p>
+        <ul>
+            <li>a) Existe uma máquina de Turing que a reconhece, mas pode não parar em entradas fora da linguagem.</li>
+            <li>b) É equivalente a uma linguagem regular em termos de poder computacional.</li>
+            <li class="correct">c) Existe uma máquina de Turing que a reconhece e sempre para em qualquer entrada.</li>
+            <li>d) Apenas linguagens livres de contexto podem ser recursivas.</li>
+        </ul>
+    </div>
 
-    <!-- Add more questions as needed -->
+    <h2>Adicionais</h2>
+    <div class="question">
+        <p><strong>11. Qual das seguintes afirmativas é verdadeira sobre a equivalência entre autómatos e expressões regulares?</strong></p>
+        <ul>
+            <li>a) Toda expressão regular pode ser convertida num AFN, mas não em um AFD.</li>
+            <li class="correct">b) Todo AFN pode ser convertido em uma expressão regular equivalente.</li>
+            <li>c) Expressões regulares descrevem todas as linguagens não regulares.</li>
+            <li>d) Autómatos a pilha determinísticos são necessários para representar expressões regulares.</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>12. Quando traduzimos uma gramática livre de contexto para um autómato a pilha equivalente, o que a pilha normalmente representa?</strong></p>
+        <ul>
+            <li>a) O comprimento da string sendo lida</li>
+            <li>b) A sequência de símbolos terminais gerados</li>
+            <li class="correct">c) A sequência de produções aplicadas na derivação</li>
+            <li>d) Os estados não determinísticos do autómato</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>13. O problema da parada é indecidível porque:</strong></p>
+        <ul>
+            <li>a) Ele requer mais memória do que está disponível em uma Máquina de Turing.</li>
+            <li class="correct">b) Não é possível prever se um programa entrará num ciclo infinito para todas as entradas.</li>
+            <li>c) Algumas linguagens não podem ser representadas por uma Máquina de Turing.</li>
+            <li>d) Todas as opções acima.</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>14. Qual dos seguintes problemas é decidível para autómatos finitos?</strong></p>
+        <ul>
+            <li>a) Determinar se o autómato aceita uma linguagem infinita.</li>
+            <li>b) Decidir se dois autómatos aceitam linguagens idênticas.</li>
+            <li class="correct">c) Determinar se o autómato rejeita todas as entradas.</li>
+            <li>d) Verificar se um autómato finito determinístico é equivalente a uma Máquina de Turing.</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p><strong>15. Qual afirmativa é verdadeira sobre o lema do bombeamento para linguagens regulares?</strong></p>
+        <ul>
+            <li>a) Ele prova que linguagens regulares possuem um número infinito de palavras.</li>
+            <li>b) Ele fornece uma forma de construir novos autómatos.</li>
+            <li class="correct">c) Ele garante que strings longas em uma linguagem regular podem ser repetidas.</li>
+            <li>d) Ele identifica um limite superior para o tamanho de linguagens regulares.</li>
+        </ul>
+    </div>
 </body>
 </html>
